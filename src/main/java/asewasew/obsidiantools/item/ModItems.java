@@ -30,16 +30,16 @@ public class ModItems {
 
     public static final Item OBSIDIAN_HELMET = registerItem("obsidian_helmet",
             settings -> new ArmorItem(ModArmorMaterials.OBSIDIAN_ARMOR_MATERIAL, ArmorItem.Type.HELMET, settings
-                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(10))));
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(35))));
     public static final Item OBSIDIAN_CHESTPLATE = registerItem("obsidian_chestplate",
             settings -> new ArmorItem(ModArmorMaterials.OBSIDIAN_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, settings
-                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(10))));
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(35))));
     public static final Item OBSIDIAN_LEGGINGS = registerItem("obsidian_leggings",
             settings -> new ArmorItem(ModArmorMaterials.OBSIDIAN_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, settings
-                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(10))));
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(35))));
     public static final Item OBSIDIAN_BOOTS = registerItem("obsidian_boots",
             settings -> new ArmorItem(ModArmorMaterials.OBSIDIAN_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, settings
-                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(10))));
+                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(35))));
 
     public static final Item OBSIDIAN_HORSE_ARMOR = registerItem("obsidian_horse_armor",
             settings -> new AnimalArmorItem(ModArmorMaterials.OBSIDIAN_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, settings.maxCount(1)));
