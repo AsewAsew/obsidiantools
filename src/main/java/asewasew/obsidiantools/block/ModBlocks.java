@@ -13,16 +13,21 @@ import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
     public static Block REFINED_OBSIDIAN_BLOCK = registerBlock(
-            new Block(AbstractBlock.Settings.create().strength(55f, 1200f)
+            new Block(AbstractBlock.Settings.create()
+                    .registryKey(RegistryKey.of(RegistryKeys.BLOCK, ObsidianTools.id("refined_obsidian_block")))
+                    .strength(55f, 1200f)
                     .mapColor(MapColor.BLACK).instrument(NoteBlockInstrument.BASEDRUM).requiresTool().pistonBehavior(PistonBehavior.BLOCK)));
 
     private static Block registerBlock(Block block) {
         Identifier id = ObsidianTools.id("refined_obsidian_block");
-        Registry.register(Registries.ITEM, id, new BlockItem(block, new Item.Settings().fireproof()));
+        Registry.register(Registries.ITEM, id, new BlockItem(block, new Item.Settings()
+                .registryKey(RegistryKey.of(RegistryKeys.ITEM, id)).fireproof()));
         return Registry.register(Registries.BLOCK, id, block);
     }
     

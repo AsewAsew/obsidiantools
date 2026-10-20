@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.1,
   "group": "obsidian",
-  "ingredient": {
-    "item": "obsidiantools:obsidian_boots"
-  },
+  "ingredient": "obsidiantools:obsidian_boots",
   "result": {
     "id": "obsidiantools:obsidian_shard"
   }

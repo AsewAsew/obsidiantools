@@ -1,16 +1,10 @@
 {
   "type": "minecraft:smithing_transform",
-  "addition": {
-    "item": "minecraft:netherite_ingot"
-  },
-  "base": {
-    "item": "obsidiantools:obsidian_hoe"
-  },
+  "addition": "minecraft:netherite_ingot",
+  "base": "obsidiantools:obsidian_hoe",
   "result": {
     "count": 1,
     "id": "minecraft:netherite_hoe"
   },
-  "template": {
-    "item": "minecraft:netherite_upgrade_smithing_template"
-  }
+  "template": "minecraft:netherite_upgrade_smithing_template"
 }

@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "building",
   "key": {
-    "#": {
-      "item": "obsidiantools:refined_obsidian"
-    }
+    "#": "obsidiantools:refined_obsidian"
   },
   "pattern": [
     "###",

@@ -1,0 +1,19 @@
+{
+  "layers": {
+    "horse_body": [
+      {
+        "texture": "obsidiantools:obsidian"
+      }
+    ],
+    "humanoid": [
+      {
+        "texture": "obsidiantools:obsidian"
+      }
+    ],
+    "humanoid_leggings": [
+      {
+        "texture": "obsidiantools:obsidian"
+      }
+    ]
+  }
+}

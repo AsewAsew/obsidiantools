@@ -3,8 +3,11 @@ package asewasew.obsidiantools.item;
 import asewasew.obsidiantools.ObsidianTools;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
+import net.minecraft.item.equipment.EquipmentType;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
+import net.minecraft.registry.RegistryKeys;
 
 import java.util.function.Function;
 
@@ -13,41 +16,32 @@ public class ModItems {
     public static final Item REFINED_OBSIDIAN = registerItem("refined_obsidian", Item::new);
 
     public static final Item OBSIDIAN_SWORD = registerItem("obsidian_sword",
-            settings -> new SwordItem(ModToolMaterials.OBSIDIAN, settings
-                    .attributeModifiers(SwordItem.createAttributeModifiers(ModToolMaterials.OBSIDIAN, 3, -2.4F))));
+            settings -> new SwordItem(ModToolMaterials.OBSIDIAN, 3, -2.4F, settings));
     public static final Item OBSIDIAN_SHOVEL = registerItem("obsidian_shovel",
-            settings -> new ShovelItem(ModToolMaterials.OBSIDIAN, settings
-                    .attributeModifiers(ShovelItem.createAttributeModifiers(ModToolMaterials.OBSIDIAN, 1.5f, -3.0f))));
+            settings -> new ShovelItem(ModToolMaterials.OBSIDIAN, 1.5f, -3.0f, settings));
     public static final Item OBSIDIAN_PICKAXE = registerItem("obsidian_pickaxe",
-            settings -> new PickaxeItem(ModToolMaterials.OBSIDIAN, settings
-                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ModToolMaterials.OBSIDIAN, 1, -2.8f))));
+            settings -> new PickaxeItem(ModToolMaterials.OBSIDIAN, 1, -2.8f, settings));
     public static final Item OBSIDIAN_AXE = registerItem("obsidian_axe",
-            settings -> new AxeItem(ModToolMaterials.OBSIDIAN, settings
-                    .attributeModifiers(AxeItem.createAttributeModifiers(ModToolMaterials.OBSIDIAN, 5, -3.0f))));
+            settings -> new AxeItem(ModToolMaterials.OBSIDIAN, 5, -3.0f, settings));
     public static final Item OBSIDIAN_HOE = registerItem("obsidian_hoe",
-            settings -> new HoeItem(ModToolMaterials.OBSIDIAN, settings
-                    .attributeModifiers(HoeItem.createAttributeModifiers(ModToolMaterials.OBSIDIAN, -3, 0.0f))));
+            settings -> new HoeItem(ModToolMaterials.OBSIDIAN, -3, 0.0f, settings));
 
     public static final Item OBSIDIAN_HELMET = registerItem("obsidian_helmet",
-            settings -> new ArmorItem(ModArmorMaterials.OBSIDIAN_ARMOR_MATERIAL, ArmorItem.Type.HELMET, settings
-                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(10))));
+            settings -> new ArmorItem(ModArmorMaterials.OBSIDIAN_ARMOR_MATERIAL, EquipmentType.HELMET, settings));
     public static final Item OBSIDIAN_CHESTPLATE = registerItem("obsidian_chestplate",
-            settings -> new ArmorItem(ModArmorMaterials.OBSIDIAN_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, settings
-                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(10))));
+            settings -> new ArmorItem(ModArmorMaterials.OBSIDIAN_ARMOR_MATERIAL, EquipmentType.CHESTPLATE, settings));
     public static final Item OBSIDIAN_LEGGINGS = registerItem("obsidian_leggings",
-            settings -> new ArmorItem(ModArmorMaterials.OBSIDIAN_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS, settings
-                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(10))));
+            settings -> new ArmorItem(ModArmorMaterials.OBSIDIAN_ARMOR_MATERIAL, EquipmentType.LEGGINGS, settings));
     public static final Item OBSIDIAN_BOOTS = registerItem("obsidian_boots",
-            settings -> new ArmorItem(ModArmorMaterials.OBSIDIAN_ARMOR_MATERIAL, ArmorItem.Type.BOOTS, settings
-                    .maxDamage(ArmorItem.Type.BOOTS.getMaxDamage(10))));
+            settings -> new ArmorItem(ModArmorMaterials.OBSIDIAN_ARMOR_MATERIAL, EquipmentType.BOOTS, settings));
 
     public static final Item OBSIDIAN_HORSE_ARMOR = registerItem("obsidian_horse_armor",
-            settings -> new AnimalArmorItem(ModArmorMaterials.OBSIDIAN_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, false, settings.maxCount(1)));
+            settings -> new AnimalArmorItem(ModArmorMaterials.OBSIDIAN_ARMOR_MATERIAL, AnimalArmorItem.Type.EQUESTRIAN, settings.maxCount(1)));
 
 
     private static Item registerItem(String name, Function<Item.Settings, Item> function) {
         return Registry.register(Registries.ITEM, ObsidianTools.id(name),
-                function.apply(new Item.Settings().fireproof()));
+                function.apply(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, ObsidianTools.id(name))).fireproof()));
     }
     
     public static void registerModItems() {

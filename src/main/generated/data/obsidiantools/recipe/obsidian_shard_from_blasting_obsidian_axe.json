@@ -4,9 +4,7 @@
   "cookingtime": 100,
   "experience": 0.1,
   "group": "obsidian",
-  "ingredient": {
-    "item": "obsidiantools:obsidian_axe"
-  },
+  "ingredient": "obsidiantools:obsidian_axe",
   "result": {
     "id": "obsidiantools:obsidian_shard"
   }

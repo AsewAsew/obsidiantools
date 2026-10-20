@@ -4,9 +4,7 @@
   "cookingtime": 200,
   "experience": 0.1,
   "group": "obsidian",
-  "ingredient": {
-    "item": "obsidiantools:obsidian_helmet"
-  },
+  "ingredient": "obsidiantools:obsidian_helmet",
   "result": {
     "id": "obsidiantools:obsidian_shard"
   }

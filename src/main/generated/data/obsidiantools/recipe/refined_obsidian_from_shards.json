@@ -2,9 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
-    "#": {
-      "item": "obsidiantools:obsidian_shard"
-    }
+    "#": "obsidiantools:obsidian_shard"
   },
   "pattern": [
     "###",

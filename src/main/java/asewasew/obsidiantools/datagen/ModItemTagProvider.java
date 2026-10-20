@@ -1,6 +1,7 @@
 package asewasew.obsidiantools.datagen;
 
 import asewasew.obsidiantools.item.ModItems;
+import asewasew.obsidiantools.util.ModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
@@ -15,6 +16,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup lookup) {
+        getOrCreateTagBuilder(ModTags.OBSIDIAN_REPAIR).add(ModItems.REFINED_OBSIDIAN);
+
         getOrCreateTagBuilder(ItemTags.SWORDS).add(ModItems.OBSIDIAN_SWORD);
 
         getOrCreateTagBuilder(ItemTags.SHOVELS).add(ModItems.OBSIDIAN_SHOVEL);
