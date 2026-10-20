@@ -26,7 +26,7 @@ public class ModBlocks {
 
     private static Block registerBlock(Block block) {
         Identifier id = ObsidianTools.id("refined_obsidian_block");
-        Registry.register(Registries.ITEM, id, new BlockItem(block, new Item.Settings()
+        Registry.register(Registries.ITEM, id, new BlockItem(block, new Item.Settings().useBlockPrefixedTranslationKey()
                 .registryKey(RegistryKey.of(RegistryKeys.ITEM, id)).fireproof()));
         return Registry.register(Registries.BLOCK, id, block);
     }

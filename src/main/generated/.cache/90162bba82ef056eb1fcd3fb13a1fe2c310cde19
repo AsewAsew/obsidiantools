@@ -1,9 +1,9 @@
-// 1.21.2	2026-10-20T17:27:13.2581464	Obsidian Tools/Tags for minecraft:block
-cd6f35e00c7c0b9b709a1908286cc1eb35bb19d8 data\minecraft\tags\block\wither_immune.json
-cd6f35e00c7c0b9b709a1908286cc1eb35bb19d8 data\minecraft\tags\block\mineable\pickaxe.json
-f57a1c0d935679dbbcab3f2e8a06cae2238a6735 data\obsidiantools\tags\block\incorrect_for_obsidian_tool.json
-d8c9aaf5bddc1568c70267f6581cbe6570255edb data\obsidiantools\tags\block\nether_portal_frame_blocks.json
-35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data\minecraft\tags\block\incorrect_for_diamond_tool.json
-cd6f35e00c7c0b9b709a1908286cc1eb35bb19d8 data\minecraft\tags\block\needs_diamond_tool.json
-a249c46329a41538f49a564e1f14338aaf1be5a0 data\obsidiantools\tags\block\needs_obsidian_tool.json
-cd6f35e00c7c0b9b709a1908286cc1eb35bb19d8 data\minecraft\tags\block\dragon_immune.json
+// 1.21.4	-999999999-01-01T00:00:00	Obsidian Tools/Tags for minecraft:block
+cd6f35e00c7c0b9b709a1908286cc1eb35bb19d8 data/minecraft/tags/block/dragon_immune.json
+35133e95f1c8fdd7a1c21afcc231fc0bffefb9a8 data/minecraft/tags/block/incorrect_for_diamond_tool.json
+cd6f35e00c7c0b9b709a1908286cc1eb35bb19d8 data/minecraft/tags/block/mineable/pickaxe.json
+cd6f35e00c7c0b9b709a1908286cc1eb35bb19d8 data/minecraft/tags/block/needs_diamond_tool.json
+cd6f35e00c7c0b9b709a1908286cc1eb35bb19d8 data/minecraft/tags/block/wither_immune.json
+f57a1c0d935679dbbcab3f2e8a06cae2238a6735 data/obsidiantools/tags/block/incorrect_for_obsidian_tool.json
+a249c46329a41538f49a564e1f14338aaf1be5a0 data/obsidiantools/tags/block/needs_obsidian_tool.json
+d8c9aaf5bddc1568c70267f6581cbe6570255edb data/obsidiantools/tags/block/nether_portal_frame_blocks.json

@@ -1,11 +1,11 @@
-// 1.21.2	2026-10-20T17:27:13.2601542	Obsidian Tools/Tags for minecraft:item
-9dbb26995e5e2d10f825191faeecc2cae31632d4 data\minecraft\tags\item\swords.json
-64894c3483c58a62ec79e017ceabfd2ae5a569b0 data\minecraft\tags\item\axes.json
-36795b13642e1df759e878a77198ff1c1c9113cd data\minecraft\tags\item\foot_armor.json
-addda2f8d4399c59c7db20c07f79a9c87506690e data\obsidiantools\tags\item\obsidian_repair.json
-52817731a2471335c4478054bea71ccc48f6f75c data\minecraft\tags\item\shovels.json
-fc75a0dca6ca8eebc9f3d9049d06c070595e37a3 data\minecraft\tags\item\pickaxes.json
-cc82a4401b331f0c9763f868ad4729712cfe3e03 data\minecraft\tags\item\hoes.json
-ac3570f5559c55fdbbb56f17591c4e2182861394 data\minecraft\tags\item\chest_armor.json
-5c26a285d571d7a8276c7ba0f57e50277d109934 data\minecraft\tags\item\leg_armor.json
-57c113dc3f8b745ca3b555f8d546b23caeb96d34 data\minecraft\tags\item\head_armor.json
+// 1.21.4	-999999999-01-01T00:00:00	Obsidian Tools/Tags for minecraft:item
+64894c3483c58a62ec79e017ceabfd2ae5a569b0 data/minecraft/tags/item/axes.json
+ac3570f5559c55fdbbb56f17591c4e2182861394 data/minecraft/tags/item/chest_armor.json
+36795b13642e1df759e878a77198ff1c1c9113cd data/minecraft/tags/item/foot_armor.json
+57c113dc3f8b745ca3b555f8d546b23caeb96d34 data/minecraft/tags/item/head_armor.json
+cc82a4401b331f0c9763f868ad4729712cfe3e03 data/minecraft/tags/item/hoes.json
+5c26a285d571d7a8276c7ba0f57e50277d109934 data/minecraft/tags/item/leg_armor.json
+fc75a0dca6ca8eebc9f3d9049d06c070595e37a3 data/minecraft/tags/item/pickaxes.json
+52817731a2471335c4478054bea71ccc48f6f75c data/minecraft/tags/item/shovels.json
+9dbb26995e5e2d10f825191faeecc2cae31632d4 data/minecraft/tags/item/swords.json
+addda2f8d4399c59c7db20c07f79a9c87506690e data/obsidiantools/tags/item/obsidian_repair.json
