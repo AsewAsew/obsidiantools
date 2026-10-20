@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "group": "obsidian",
+  "ingredient": {
+    "item": "obsidiantools:obsidian_pickaxe"
+  },
+  "result": {
+    "id": "obsidiantools:obsidian_shard"
+  }
+}

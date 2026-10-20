@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_obsidian_pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "obsidiantools:obsidian_pickaxe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:obsidian_shard_from_blasting_obsidian_pickaxe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_obsidian_pickaxe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:obsidian_shard_from_blasting_obsidian_pickaxe"
+    ]
+  }
+}

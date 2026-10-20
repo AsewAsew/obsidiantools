@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "obsidiantools:refined_obsidian_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "obsidiantools:refined_obsidian"
+  }
+}
