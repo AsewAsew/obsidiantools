@@ -16,7 +16,10 @@ public class ModItems {
     public static final Item REFINED_OBSIDIAN = registerItem("refined_obsidian", Item::new);
 
     public static final Item OBSIDIAN_SWORD = registerItem("obsidian_sword",
-            settings -> new Item(settings.sword(ModToolMaterials.OBSIDIAN, 3, -2.4F)));
+            settings -> new Item(settings.sword(ModToolMaterials.OBSIDIAN, 3, -2.4f)));
+    public static final Item OBSIDiAN_SPEAR = registerItem("obsidian_spear",
+            settings -> new Item(settings.spear(ModToolMaterials.OBSIDIAN, 1.05f, 1.075f, 0.5f, 3.0f, 7.5f, 6.5f, 5.1f, 10.0f, 4.6f)));
+
     public static final Item OBSIDIAN_SHOVEL = registerItem("obsidian_shovel",
             settings -> new Item(settings.shovel(ModToolMaterials.OBSIDIAN, 1.5f, -3.0f)));
     public static final Item OBSIDIAN_PICKAXE = registerItem("obsidian_pickaxe",
@@ -37,7 +40,8 @@ public class ModItems {
 
     public static final Item OBSIDIAN_HORSE_ARMOR = registerItem("obsidian_horse_armor",
             settings -> new Item(settings.horseArmor(ModArmorMaterials.OBSIDIAN_ARMOR_MATERIAL)));
-
+    public static final Item OBSIDIAN_NAUTILUS_ARMOR = registerItem("obsidian_nautilus_armor",
+            settings -> new Item(settings.nautilusArmor(ModArmorMaterials.OBSIDIAN_ARMOR_MATERIAL)));
 
     private static Item registerItem(String name, Function<Item.Settings, Item> function) {
         return Registry.register(Registries.ITEM, ObsidianTools.id(name),
@@ -59,6 +63,7 @@ public class ModItems {
         });
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
             entries.addAfter(Items.DIAMOND_SWORD, OBSIDIAN_SWORD);
+            entries.addAfter(Items.DIAMOND_SPEAR, OBSIDiAN_SPEAR);
             entries.addAfter(Items.DIAMOND_AXE, OBSIDIAN_AXE);
 
             entries.addAfter(Items.DIAMOND_BOOTS, OBSIDIAN_HELMET);
@@ -67,6 +72,7 @@ public class ModItems {
             entries.addAfter(OBSIDIAN_LEGGINGS, OBSIDIAN_BOOTS);
 
             entries.addAfter(Items.DIAMOND_HORSE_ARMOR, OBSIDIAN_HORSE_ARMOR);
+            entries.addAfter(Items.DIAMOND_NAUTILUS_ARMOR, OBSIDIAN_NAUTILUS_ARMOR);
         });
     }
 }

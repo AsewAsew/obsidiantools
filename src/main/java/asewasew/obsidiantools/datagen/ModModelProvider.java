@@ -25,6 +25,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.REFINED_OBSIDIAN, Models.GENERATED);
 
         itemModelGenerator.register(ModItems.OBSIDIAN_SWORD, Models.HANDHELD);
+        itemModelGenerator.registerSpear(ModItems.OBSIDiAN_SPEAR);
+
         itemModelGenerator.register(ModItems.OBSIDIAN_SHOVEL, Models.HANDHELD);
         itemModelGenerator.register(ModItems.OBSIDIAN_PICKAXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.OBSIDIAN_AXE, Models.HANDHELD);
@@ -36,5 +38,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.registerArmor(ModItems.OBSIDIAN_BOOTS, ModArmorMaterials.OBSIDIAN_KEY, ItemModelGenerator.BOOTS_TRIM_ID_PREFIX, false);
 
         itemModelGenerator.register(ModItems.OBSIDIAN_HORSE_ARMOR, Models.GENERATED);
+        itemModelGenerator.register(ModItems.OBSIDIAN_NAUTILUS_ARMOR, Models.GENERATED);
     }
 }

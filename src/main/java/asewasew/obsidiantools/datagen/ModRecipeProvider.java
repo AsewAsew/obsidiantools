@@ -15,6 +15,7 @@ import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.book.RecipeCategory;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.RegistryWrapper;
+import org.jspecify.annotations.NonNull;
 
 import java.util.List;
 import java.util.concurrent.CompletableFuture;
@@ -25,7 +26,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     }
 
     @Override
-    protected RecipeGenerator getRecipeGenerator(RegistryWrapper.WrapperLookup registries, RecipeExporter exporter) {
+    protected @NonNull RecipeGenerator getRecipeGenerator(RegistryWrapper.@NonNull WrapperLookup registries, @NonNull RecipeExporter exporter) {
         return new RecipeGenerator(registries, exporter) {
             @Override
             public void generate() {
@@ -69,6 +70,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 createShaped(RecipeCategory.COMBAT, ModItems.OBSIDIAN_SWORD)
                         .pattern("#").pattern("#").pattern("S").input('#', ModItems.REFINED_OBSIDIAN).input('S', Items.STICK)
                         .criterion(hasItem(ModItems.REFINED_OBSIDIAN), conditionsFromItem(ModItems.REFINED_OBSIDIAN)).offerTo(exporter);
+                createShaped(RecipeCategory.COMBAT, ModItems.OBSIDiAN_SPEAR)
+                        .pattern("  #").pattern(" S ").pattern("S  ").input('#', ModItems.REFINED_OBSIDIAN).input('S', Items.STICK)
+                        .criterion(hasItem(ModItems.REFINED_OBSIDIAN), conditionsFromItem(ModItems.REFINED_OBSIDIAN)).offerTo(exporter);
+
                 createShaped(RecipeCategory.COMBAT, ModItems.OBSIDIAN_BOOTS)
                         .pattern("# #").pattern("# #").input('#', ModItems.REFINED_OBSIDIAN)
                         .criterion(hasItem(ModItems.REFINED_OBSIDIAN), conditionsFromItem(ModItems.REFINED_OBSIDIAN)).offerTo(exporter);
@@ -82,8 +87,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                         .pattern("###").pattern("# #").input('#', ModItems.REFINED_OBSIDIAN)
                         .criterion(hasItem(ModItems.REFINED_OBSIDIAN), conditionsFromItem(ModItems.REFINED_OBSIDIAN)).offerTo(exporter);
 
-                for(Pair<Item, Item> pair : List.of(Pair.of(ModItems.OBSIDIAN_SHOVEL, Items.NETHERITE_SHOVEL), Pair.of(ModItems.OBSIDIAN_PICKAXE, Items.NETHERITE_PICKAXE), Pair.of(ModItems.OBSIDIAN_AXE, Items.NETHERITE_AXE), Pair.of(ModItems.OBSIDIAN_HOE, Items.NETHERITE_HOE),
-                        Pair.of(ModItems.OBSIDIAN_SWORD, Items.NETHERITE_SWORD), Pair.of(ModItems.OBSIDIAN_BOOTS, Items.NETHERITE_BOOTS), Pair.of(ModItems.OBSIDIAN_LEGGINGS, Items.NETHERITE_LEGGINGS), Pair.of(ModItems.OBSIDIAN_CHESTPLATE, Items.NETHERITE_CHESTPLATE), Pair.of(ModItems.OBSIDIAN_HELMET, Items.NETHERITE_HELMET))) {
+                for(Pair<Item, Item> pair : List.of(Pair.of(ModItems.OBSIDIAN_SHOVEL, Items.NETHERITE_SHOVEL), Pair.of(ModItems.OBSIDIAN_PICKAXE, Items.NETHERITE_PICKAXE), Pair.of(ModItems.OBSIDIAN_AXE, Items.NETHERITE_AXE), Pair.of(ModItems.OBSIDIAN_HOE, Items.NETHERITE_HOE), Pair.of(ModItems.OBSIDIAN_SWORD, Items.NETHERITE_SWORD),
+                        Pair.of(ModItems.OBSIDiAN_SPEAR, Items.NETHERITE_SPEAR), Pair.of(ModItems.OBSIDIAN_BOOTS, Items.NETHERITE_BOOTS), Pair.of(ModItems.OBSIDIAN_LEGGINGS, Items.NETHERITE_LEGGINGS), Pair.of(ModItems.OBSIDIAN_CHESTPLATE, Items.NETHERITE_CHESTPLATE), Pair.of(ModItems.OBSIDIAN_HELMET, Items.NETHERITE_HELMET))) {
                     SmithingTransformRecipeJsonBuilder.create(
                                     Ingredient.ofItems(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE),
                                     Ingredient.ofItems(pair.getFirst()), Ingredient.ofItems(Items.NETHERITE_INGOT),

@@ -6,6 +6,7 @@ import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;
 import net.minecraft.registry.tag.ItemTags;
+import org.jspecify.annotations.NonNull;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -15,10 +16,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
     }
 
     @Override
-    protected void configure(RegistryWrapper.WrapperLookup lookup) {
+    protected void configure(RegistryWrapper.@NonNull WrapperLookup lookup) {
         valueLookupBuilder(ModTags.OBSIDIAN_REPAIR).add(ModItems.REFINED_OBSIDIAN);
 
         valueLookupBuilder(ItemTags.SWORDS).add(ModItems.OBSIDIAN_SWORD);
+        valueLookupBuilder(ItemTags.SPEARS).add(ModItems.OBSIDiAN_SPEAR);
 
         valueLookupBuilder(ItemTags.SHOVELS).add(ModItems.OBSIDIAN_SHOVEL);
         valueLookupBuilder(ItemTags.PICKAXES).add(ModItems.OBSIDIAN_PICKAXE);
