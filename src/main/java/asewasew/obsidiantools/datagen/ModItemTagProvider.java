@@ -16,18 +16,18 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
     @Override
     protected void configure(RegistryWrapper.WrapperLookup lookup) {
-        valueLookupBuilder(ModTags.OBSIDIAN_REPAIR).add(ModItems.REFINED_OBSIDIAN);
+        getOrCreateTagBuilder(ModTags.OBSIDIAN_REPAIR).add(ModItems.REFINED_OBSIDIAN);
 
-        valueLookupBuilder(ItemTags.SWORDS).add(ModItems.OBSIDIAN_SWORD);
+        getOrCreateTagBuilder(ItemTags.SWORDS).add(ModItems.OBSIDIAN_SWORD);
 
-        valueLookupBuilder(ItemTags.SHOVELS).add(ModItems.OBSIDIAN_SHOVEL);
-        valueLookupBuilder(ItemTags.PICKAXES).add(ModItems.OBSIDIAN_PICKAXE);
-        valueLookupBuilder(ItemTags.AXES).add(ModItems.OBSIDIAN_AXE);
-        valueLookupBuilder(ItemTags.HOES).add(ModItems.OBSIDIAN_HOE);
+        getOrCreateTagBuilder(ItemTags.SHOVELS).add(ModItems.OBSIDIAN_SHOVEL);
+        getOrCreateTagBuilder(ItemTags.PICKAXES).add(ModItems.OBSIDIAN_PICKAXE);
+        getOrCreateTagBuilder(ItemTags.AXES).add(ModItems.OBSIDIAN_AXE);
+        getOrCreateTagBuilder(ItemTags.HOES).add(ModItems.OBSIDIAN_HOE);
 
-        valueLookupBuilder(ItemTags.FOOT_ARMOR).add(ModItems.OBSIDIAN_BOOTS);
-        valueLookupBuilder(ItemTags.LEG_ARMOR).add(ModItems.OBSIDIAN_LEGGINGS);
-        valueLookupBuilder(ItemTags.CHEST_ARMOR).add(ModItems.OBSIDIAN_CHESTPLATE);
-        valueLookupBuilder(ItemTags.HEAD_ARMOR).add(ModItems.OBSIDIAN_HELMET);
+        getOrCreateTagBuilder(ItemTags.FOOT_ARMOR).add(ModItems.OBSIDIAN_BOOTS);
+        getOrCreateTagBuilder(ItemTags.LEG_ARMOR).add(ModItems.OBSIDIAN_LEGGINGS);
+        getOrCreateTagBuilder(ItemTags.CHEST_ARMOR).add(ModItems.OBSIDIAN_CHESTPLATE);
+        getOrCreateTagBuilder(ItemTags.HEAD_ARMOR).add(ModItems.OBSIDIAN_HELMET);
     }
 }
