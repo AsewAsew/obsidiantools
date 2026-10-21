@@ -3,7 +3,6 @@
   "addition": "minecraft:netherite_ingot",
   "base": "obsidiantools:obsidian_axe",
   "result": {
-    "count": 1,
     "id": "minecraft:netherite_axe"
   },
   "template": "minecraft:netherite_upgrade_smithing_template"

@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:netherite_hoe_from_obsidian_hoe_smithing"
+        "recipe": "obsidiantools:netherite_hoe_from_obsidian_hoe_smithing"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:netherite_hoe_from_obsidian_hoe_smithing"
+      "obsidiantools:netherite_hoe_from_obsidian_hoe_smithing"
     ]
   }
 }

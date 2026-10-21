@@ -3,9 +3,9 @@
 	"id": "obsidiantools",
 	"version": "${version}",
 	"name": "Obsidian Tools",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "An Obsidian Tool tier between Diamond and Netherite!",
 	"authors": [
-		"Me!"
+		"AsewAsew"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -27,7 +27,7 @@
 	],
 	"depends": {
 		"fabricloader": ">=0.19.5",
-		"minecraft": "1.21.4",
+		"minecraft": "~1.21.9",
 		"java": ">=21",
 		"fabric-api": "*"
 	}

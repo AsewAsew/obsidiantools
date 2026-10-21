@@ -3,7 +3,6 @@
   "addition": "minecraft:netherite_ingot",
   "base": "obsidiantools:obsidian_hoe",
   "result": {
-    "count": 1,
     "id": "minecraft:netherite_hoe"
   },
   "template": "minecraft:netherite_upgrade_smithing_template"

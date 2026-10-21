@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:obsidian_shard_from_blasting_obsidian_pickaxe"
+        "recipe": "obsidiantools:obsidian_shard_from_blasting_obsidian_pickaxe"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:obsidian_shard_from_blasting_obsidian_pickaxe"
+      "obsidiantools:obsidian_shard_from_blasting_obsidian_pickaxe"
     ]
   }
 }

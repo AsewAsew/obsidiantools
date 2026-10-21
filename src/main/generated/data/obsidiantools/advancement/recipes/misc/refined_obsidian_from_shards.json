@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:refined_obsidian_from_shards"
+        "recipe": "obsidiantools:refined_obsidian_from_shards"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:refined_obsidian_from_shards"
+      "obsidiantools:refined_obsidian_from_shards"
     ]
   }
 }

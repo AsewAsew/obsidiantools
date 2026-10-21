@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:netherite_boots_from_obsidian_boots_smithing"
+        "recipe": "obsidiantools:netherite_boots_from_obsidian_boots_smithing"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "minecraft:netherite_boots_from_obsidian_boots_smithing"
+      "obsidiantools:netherite_boots_from_obsidian_boots_smithing"
     ]
   }
 }
