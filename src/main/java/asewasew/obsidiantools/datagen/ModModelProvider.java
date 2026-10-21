@@ -30,10 +30,10 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.OBSIDIAN_AXE, Models.HANDHELD);
         itemModelGenerator.register(ModItems.OBSIDIAN_HOE, Models.HANDHELD);
 
-        itemModelGenerator.registerArmor(ModItems.OBSIDIAN_HELMET, ModArmorMaterials.OBSIDIAN_KEY, "helmet", false);
-        itemModelGenerator.registerArmor(ModItems.OBSIDIAN_CHESTPLATE, ModArmorMaterials.OBSIDIAN_KEY, "chestplate", false);
-        itemModelGenerator.registerArmor(ModItems.OBSIDIAN_LEGGINGS, ModArmorMaterials.OBSIDIAN_KEY, "leggings", false);
-        itemModelGenerator.registerArmor(ModItems.OBSIDIAN_BOOTS, ModArmorMaterials.OBSIDIAN_KEY, "boots", false);
+        itemModelGenerator.registerArmor(ModItems.OBSIDIAN_HELMET, ModArmorMaterials.OBSIDIAN_KEY, ItemModelGenerator.HELMET_TRIM_ID_PREFIX, false);
+        itemModelGenerator.registerArmor(ModItems.OBSIDIAN_CHESTPLATE, ModArmorMaterials.OBSIDIAN_KEY, ItemModelGenerator.CHESTPLATE_TRIM_ID_PREFIX, false);
+        itemModelGenerator.registerArmor(ModItems.OBSIDIAN_LEGGINGS, ModArmorMaterials.OBSIDIAN_KEY, ItemModelGenerator.LEGGINGS_TRIM_ID_PREFIX, false);
+        itemModelGenerator.registerArmor(ModItems.OBSIDIAN_BOOTS, ModArmorMaterials.OBSIDIAN_KEY, ItemModelGenerator.BOOTS_TRIM_ID_PREFIX, false);
 
         itemModelGenerator.register(ModItems.OBSIDIAN_HORSE_ARMOR, Models.GENERATED);
     }
